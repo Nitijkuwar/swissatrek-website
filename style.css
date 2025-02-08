@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    pad: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #757783;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 50px auto 50px auto;
+}
+
+/* top nav */
+.top-nav {
+    /* justify-content: space-around; */
+    background-color: #313041;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+
+    div {
+        padding: 20px;
+        align-items: center;
+        display: flex;
+        margin-left: 40px;
+
+        p {
+            width: 150px;
+            color: white;
+        }
+
+        i {
+            width: 40px;
+            font-size: 20px;
+            color: green;
+        }
+    }
+}
+
+/* navbar */
+nav {
+    box-shadow: 10px 10px 40px -30px black;
+    padding: 20px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    div {
+        /* width: 50%; */
+        display: flex;
+        /* margin-left: -20px; */
+        align-items: center;
+
+        .navlink a {
+            font-size: 25px;
+            margin-left: 30px;
+            font-weight: 100;
+
+
+        }
+
+        .navlink a:hover {
+            text-decoration: underline;
+            text-decoration-color: #e04b4b;
+            text-underline-offset: 34px;
+        }
+    }
+
+    i {
+        /* color: white; */
+        /* border: 1px solid ; */
+
+    }
+
+    /* dropdown */
+    .dropdown {
+        float: left;
+        overflow: hidden;
+
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        padding: 20px;
+        border-radius: 100%;
+        background-color: #faf5ee;
+        font-family: inherit;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 1px;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
