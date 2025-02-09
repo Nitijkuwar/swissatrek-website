@@ -1,6 +1,6 @@
 * {
     margin: 0px;
-    pad: 0px;
+    padding: 0px;
 }
 
 a {
@@ -18,7 +18,7 @@ a {
 .top-nav {
     /* justify-content: space-around; */
     background-color: #313041;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     display: flex;
     width: 100%;
 
@@ -114,5 +114,247 @@ nav {
 
     .dropdown:hover .dropdown-content {
         display: block;
+    }
+}
+
+/* contact */
+.contact {
+    margin: 50px 0px 20px 50px;
+    padding-left: 40px;
+
+    p {
+        color: #da5252;
+        font-family: Passions Conflict, cursive;
+        ;
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+
+    iframe {
+        width: 800px;
+        height: 300px;
+        /* padding-right: 40px; */
+    }
+
+}
+
+.contact-right {
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+    height: fit-content;
+    width: min-content;
+
+    p {
+        color: #8c8d97;
+    }
+
+    div {
+        margin-top: 20px;
+
+        .phone {
+            display: flex;
+            gap: 20px 20px;
+
+            p {
+                color: #8c8d97;
+            }
+        }
+
+        .email {
+            display: flex;
+            gap: 20px 20px;
+
+            p {
+                color: #8c8d97;
+            }
+        }
+
+        .location {
+            display: flex;
+            gap: 20px 20px;
+
+            p {
+                color: #8c8d97;
+            }
+        }
+    }
+}
+
+/* footer */
+footer {
+    background-color: #313040;
+
+    /* top footer */
+    .top-footer {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        /* top footer bhitra koni 1st */
+        .footer-first {
+            width: 340px;
+
+            p {
+                color: #a9a8b5;
+                font-size: 16px;
+            }
+
+            hr {
+                color: #a9a8b5;
+                margin-top: 30px;
+            }
+
+            div {
+                margin-top: 20px;
+
+                .footer-phone {
+                    display: flex;
+                    gap: 20px 20px;
+
+                    p {
+                        color: #a9a8b5;
+                        font-size: 16px;
+                    }
+
+                    i {
+                        color: green;
+                        font-size: 20px;
+                    }
+                }
+
+                .footer-email {
+                    display: flex;
+                    gap: 20px 20px;
+
+                    p {
+                        color: #a9a8b5;
+                        font-size: 16px;
+                    }
+
+                    i {
+                        color: red;
+                        font-size: 20px;
+                    }
+                }
+
+                .footer-location {
+                    display: flex;
+                    gap: 20px 20px;
+
+                    p {
+                        color: #a9a8b5;
+                        font-size: 16px;
+                    }
+
+                    i {
+                        color: red;
+                        font-size: 20px;
+                    }
+
+                }
+            }
+        }
+
+        /* footer 2nd */
+        .footer-second {
+            width: 340px;
+
+            p {
+                color: #a9a8b5;
+                font-size: 16px;
+            }
+
+            hr {
+                color: #a9a8b5;
+                margin-top: 30px;
+            }
+
+            div {
+                margin-top: 20px;
+
+                .footer-secphone {
+                    display: flex;
+                    gap: 20px 20px;
+
+                    p {
+                        color: #a9a8b5;
+                        font-size: 16px;
+                    }
+
+                    i {
+                        color: green;
+                        font-size: 20px;
+                    }
+                }
+
+                .footer-seclocation {
+                    display: flex;
+                    gap: 20px 20px;
+
+                    p {
+                        color: #a9a8b5;
+                        font-size: 16px;
+                    }
+
+                    i {
+                        font-size: 20px;
+                        color: red;
+                    }
+
+                }
+            }
+        }
+
+        /* footer 3rd */
+        .footer-third {
+            width: 340px;
+
+            h4 {
+                color: white;
+                font-size: 20px;
+            }
+
+            div {
+                display: grid;
+                grid-template-rows: auto;
+                /* margin-top: 20px; */
+
+                a {
+                    font-size: 20px;
+                    color: #a9a8b5;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    /* down footer */
+    .down-footer {
+        background-color: white;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+     text-align: center;
+        width: 80%;
+
+        .footer-icon {
+        padding: 30px;
+
+            a {
+                color: ;
+            }
+        }
+        p{
+            float: right;
+        }
     }
 }
