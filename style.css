@@ -125,7 +125,6 @@ nav {
     p {
         color: #da5252;
         font-family: Passions Conflict, cursive;
-        ;
         font-size: 40px;
     }
 
@@ -472,4 +471,139 @@ footer {
         /* background-color: rgb(21, 1, 1); */
         background-color: white;
     }
+}
+
+/* Destination */
+.destination-container {
+    /* width: 95%; */
+    padding: 50px;
+}
+
+.destination-heading {
+    text-align: center;
+    line-height: 1.5;
+
+    p {
+        color: #da5252;
+        font-family: Passions Conflict, cursive;
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 55px;
+    }
+}
+
+.destination-image {
+    display: flex;
+    justify-content: center;
+    gap: 20px 20px;
+    flex-wrap: wrap;
+
+    .image1 {
+        position: relative;
+
+        img {
+            height: 200px;
+            width: 300px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .destination-text {
+            position: absolute;
+            left: 15px;
+            bottom: 25px;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    }
+}
+/* button destination */
+.button-dest{
+    width: 80px;
+    height: 40px;
+    color: #da5252;
+    float: right;
+    border: 2px solid #da5252;
+    cursor: pointer;
+    /* text-align: right; */
+    /* padding: 15px; */
+}
+/* why choose us  */
+.dest-choose{
+    display: flex;
+    /* grid-template-columns: 50% 50%; */
+    /* justify-content: center; */
+    padding: 50px;
+    margin: 50px;
+    column-gap: 50px;
+}
+.choose-text{
+    width: 50%;
+    line-height: 1.5;
+    div{
+        color: #da5252;
+        font-family: Passions Conflict, cursive;
+        font-size: 40px;
+    }
+    h3{
+        font-size: 50px;
+    }
+    p{
+        color: #a9a8b5;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    /* point of why choose us */
+    .text-point{
+padding-top: 10px;
+        i{
+            color: white;
+            background-color: #da5252;
+            border-radius: 50%;
+            /* padding: 3px; */
+            font-size: 18px;
+        }
+        p{
+            color: rgba(0, 0, 0, 0.648);
+            font-family: 'Times New Roman';
+            font-size: 20px;
+           /* padding: 10px; */
+        }
+    }
+}
+.choose-img {
+    width: 40%;
+    img{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+}
+/* circle animation */
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+        transform: translate(50px);
+        border-radius: 100%;
+    }
+    20% {
+        /* transform: rotate(20deg); */
+        transform: translatey(190px);
+        border-radius: 100%;
+    }
+/* 
+    100% {
+        transform: translateY(1000px);
+        border-radius: 100%;
+    } */
+}
+
+.circle {
+    height: 80px;
+    width: 80px;
+    background-color: aqua;
+    animation: circle 15s ease-in 0.2s infinite;
 }
