@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="javascript.js">
-    <link rel="stylesheet" href="mediaquery.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Passions+Conflict&family=Playwrite+IE+Guides&display=swap"
         rel="stylesheet">
@@ -26,7 +24,7 @@
         </div>
     </div>
     <!-- navbar -->
-    <nav id="myTopnav" class="navbar">
+    <nav>
         <div>
             <a href="index.html"><img src="/assets/images/nav/navimage.png" alt="nav-image" height="60px"
                     width="100px"></a>
@@ -38,11 +36,6 @@
                 <a href="contact.html">Contact</a>
             </div>
         </div>
-        <div class="home-bar">
-            <a href="javascript:void(0);" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
         <div class="dropdown">
             <button class="dropbtn"><i class="fa-solid fa-user"></i>
             </button>
@@ -52,37 +45,50 @@
             </div>
         </div>
     </nav>
-    <section class="container">
-        <div class="contact">
-            <p>Get in touch with us</p>
-            <h3>Our Headquarter</h3>
+    <!-- About us section -->
+    <section class="about-container">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>Swissa Pvt. Ltd, an adventure company managed and operated by Nepali professionals, was formed in 1992
+                and has become popular among the adventure seeker around the globe ever since. We have been able to
+                maintain the standard of quality service along with guaranteed satisfaction since our establishment to
+                till date in arranging and operating safe and fun river trips throughout Nepal. Whether you are a
+                nervous beginner or an experienced thrill-seeker, we will ensure the adventure for lifetime. Our
+                internationally experienced guides, skilled boat captains, chefs and other river crews are fully trained
+                in first-aid and river rescue as well as committed to deliver an extra value exploring the remote
+                countryside and natural beauty of Nepal, which would be almost impossible without river excursion. No
+                matter whether you are in group or an individual, we can organize a trip on wide range of rivers by raft
+                and kayak.</p>
         </div>
-        <div class="contact-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14128.146168095438!2d85.308703!3d27.716158000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c8a7e0a42d%3A0xa588f5174eff7a6e!2zU3dpc3NhIEFnZW5jeSBOZXBhbCDXodeV15vXoNeV16og16HXldeV15nXodeU!5e0!3m2!1sen!2snp!4v1738995346172!5m2!1sen!2snp"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="contact-right">
-                <p>Located at the center of attraction for tourist,Our Headquarter</p>
-                <hr>
-                <div>
-                    <div class="phone">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <p>+977 9846047176</p>
-                    </div>
-                    <div class="email">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>info@swissatrek.com</p>
-                    </div>
-                    <div class="location">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>Paknajol,Thamel,kathmandu</p>
-                    </div>
+        <!-- Destination choose us -->
+        <div class="dest-choose">
+            <div class="choose-text">
+                <div>Why Choose Us?</div>
+                <h3>Plan Your Trip with Swissa's</h3>
+                <p>There are many variations of passages of available but the majority have suffered alteration in some
+                    form, by injected hum randomised words which don't look even slightly.</p>
+                <div class="text-point">
+                    <p><i class="fa-solid fa-check"></i>Invest in your simply neighborhood</p>
+                    <p><i class="fa-solid fa-check"></i>Support people in free text extreme need</p>
+                    <p><i class="fa-solid fa-check"></i>Largest global industrial business community</p>
                 </div>
+                <button type="button">Book with us now</button>
+            </div>
+            <div class="choose-img">
+                <div class="circle"></div>
+                <img src="/assets/images/destination/choose-img.jpeg" alt="">
             </div>
         </div>
-
     </section>
+        <!-- <div class="about-bottom">
+            <div class="text">
+                <p>Are you ready to travel?</p>
+                <h3>Swissa's is a World Leading Online Tour Booking Platform</h3>
+            </div>
+            <div>
+
+            </div>
+        </div> -->
     <!-- footer -->
     <footer>
         <div class="top-footer">
@@ -138,15 +144,5 @@
         </div>
     </footer>
 </body>
-<!-- nav -->
-<script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "navbar") {
-            x.className += " responsive";
-        } else {
-            x.className = "navbar";
-        }
-    }
-</script>
+
 </html>
