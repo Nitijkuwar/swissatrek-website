@@ -41,7 +41,7 @@ a {
 /* .home-bar{
     display: none;
 } */
-nav{
+nav {
     box-shadow: 10px 10px 40px -30px black;
     padding: 20px;
     height: 80px;
@@ -275,6 +275,7 @@ footer {
         /* footer 2nd */
         .footer-second {
             width: 320px;
+
             p {
                 color: #a9a8b5;
                 font-size: 16px;
@@ -368,7 +369,7 @@ footer {
 /*  */
 .package-heading {
     font-size: 50px;
-    margin:40px;
+    margin: 40px;
     padding-left: 20px;
 }
 
@@ -386,21 +387,27 @@ footer {
 .member {
     cursor: pointer;
     position: relative;
-    z-index: -1;
+    z-index: 5;
+
+}
+
+.image-wrapper {
+    width: 450px;
+    height: 300px;
 }
 
 .image-wrapper img {
     border-radius: 20px;
-    width: 450px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .image-wrapper::after {
     content: "";
     position: absolute;
-    width: 450px;
-    height: 300px;
+    /* width: 450px;
+    height: 300px; */
     top: 0;
     left: 0;
     right: 0;
@@ -412,9 +419,9 @@ footer {
 /* features and watchlist */
 .package-features {
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     /* height: 40px; */
-    width: 85px;
+    /* width: 85px; */
     /* align-items: center; */
     text-align: center;
     background-color: #40826b;
@@ -446,12 +453,12 @@ footer {
 .info {
     position: absolute;
     color: white;
-    width: 100%;
+    /* width: 100%; */
     /* height: 150px; */
-    bottom: 5px;
-    left: 5px;
+    bottom: 1px;
+    /* left: 10px; */
     border-radius: 14px;
-    padding: 8px;
+    padding: 20px;
     line-height: 1.5;
     /* background-color: white; */
 
@@ -472,15 +479,18 @@ footer {
             font-size: 20px;
         }
     }
+}
 
-
-    /* hoover */
-    .info:hover {
-        width: 100%;
-        /* height: 150px; */
-        /* background-color: rgb(21, 1, 1); */
-        background-color: white;
-    }
+/* hoover */
+.info:hover {
+    width: 100%;
+    color: black;
+    /* box-shadow: 10px 10px 25px black; */
+    /* height: 150px; */
+    /* background-color: rgb(21, 1, 1); */
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: white;
 }
 
 /* Destination */
@@ -680,12 +690,12 @@ footer {
 }
 
 /* about section bottom part  */
-/* .about-bottom{
+.about-bottom {
     background-image: url(/assets/images/about/about.webp);
-    height: 500px;
+    /* height: 500px; */
     object-fit: cover;
 
-.text{
-    background-attachment: scroll;
+    .text {
+        position: scroll;
+    }
 }
-} */
